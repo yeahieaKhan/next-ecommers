@@ -103,10 +103,10 @@ export default function Navbar() {
                     <Link href="/orders-details">Order Details</Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem>
-                    <Link href="/delivery">Delivery Address</Link>
+                    <Link href="/profile/address">Delivery Address</Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem>
-                    <Link href="/wishlist">Wishlist</Link>
+                    <Link href="/profile/wishlist">Wishlist</Link>
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
                   <DropdownMenuItem
