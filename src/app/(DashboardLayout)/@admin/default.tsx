@@ -1,7 +1,5 @@
-import React from 'react'
+const AdminDefault = () => {
+  return null;
+};
 
-export default function default() {
-  return (
-    <div>THis is default</div>
-  )
-}
+export default AdminDefault;
