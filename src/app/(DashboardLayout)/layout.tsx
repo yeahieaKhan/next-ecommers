@@ -1,3 +1,4 @@
+import { AppSidebar } from "@/components/shared/SideBarComponent/app-sidebar";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -18,9 +19,10 @@ export default async function DashboardLayout({
   admin: React.ReactNode;
   user: React.ReactNode;
 }) {
+  const userRole = "admin";
   return (
     <SidebarProvider>
-      <AppSidebar userRole="" />
+      <AppSidebar userRole="user" />
 
       <SidebarInset>
         <header className="sticky top-0 z-10 bg-background flex h-16 items-center justify-between px-4 border-b">
@@ -32,9 +34,7 @@ export default async function DashboardLayout({
                   <BreadcrumbLink href="/dashboard">Home</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  {userRole === "user" ? "User" : "Admin"}
-                </BreadcrumbItem>
+                <BreadcrumbItem>{"Admin"}</BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
           </div>
@@ -43,8 +43,7 @@ export default async function DashboardLayout({
         <main
           className={`p-4 relative  pt-6 min-h-[calc(100vh-4rem)] gradientBg`}
         >
-          {user}
-          {admin}
+          {userRole === "user" ? user : admin}
         </main>
       </SidebarInset>
     </SidebarProvider>

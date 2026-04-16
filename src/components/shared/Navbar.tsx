@@ -114,7 +114,7 @@ export default function Navbar() {
                     onClick={handleLogOut}
                   >
                     <LayoutDashboard className="mr-2 h-4 w-4" />
-                    <span>Dashboard</span>
+                    <Link href="/dashboard">Dashboard</Link>
                   </DropdownMenuItem>
 
                   <DropdownMenuSeparator />

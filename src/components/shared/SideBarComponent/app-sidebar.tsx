@@ -27,9 +27,10 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
+
+import Image from "next/image";
 import { NavMain } from "./nav-main";
 import { NavUser } from "./nav-user";
-import Image from "next/image";
 
 // User Navigation Items
 const USER_NAV_ITEMS = [
@@ -83,7 +84,7 @@ export function AppSidebar({ userRole, ...props }: AppSidebarProps) {
 
       <SidebarContent>
         {/* Main Navigation */}
-        <NavMain items={navItems} />
+        <NavMain items={ADMIN_NAV_ITEMS} />
 
         {/* Common Secondary Navigation */}
         {/* <div className="mt-4">

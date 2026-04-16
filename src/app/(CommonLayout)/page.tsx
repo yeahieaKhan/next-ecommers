@@ -1,6 +1,4 @@
 import HeroCarousel from "@/components/modules/home/Slider";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
 
 export default function Home() {
   return (
